@@ -13,5 +13,11 @@ class LibraryTest {
     void testSomeLibraryMethod() {
         File testFile = new File("data/test/test.txt");
         Assertions.assertTrue(testFile.exists());
+        
+        try {
+         Thread.sleep(20);
+      } catch (InterruptedException e) {
+         e.printStackTrace();
+      }
     }
 }
